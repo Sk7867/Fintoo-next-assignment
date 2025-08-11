@@ -1,3 +1,8 @@
-export const renderCustomizedLabel = ({ percentage }: any) => {
+interface IRenderCustomizedLabelProps {
+  percentage: number;
+}
+export const renderCustomizedLabel = ({
+  percentage,
+}: IRenderCustomizedLabelProps) => {
   return `${percentage}%`;
 };

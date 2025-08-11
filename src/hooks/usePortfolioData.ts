@@ -29,7 +29,7 @@ export const usePortfolioData = (selectedDate: string) => {
           insightsData: currentSnapshot.insights as IInsightsData,
         });
       }
-    } catch (err: any) {
+    } catch (err: unknown) {
       console.error("Error fetching portfolio data:", err);
       setData(null);
     }
