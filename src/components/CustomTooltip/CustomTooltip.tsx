@@ -3,8 +3,8 @@ import { formatCurrency } from "../../utils/formatCurrency";
 import { IAssetAllocation } from "@/models/user-data.interface";
 
 interface ICustomTooltipPros {
-  active: boolean,
-  payload: { payload: IAssetAllocation }[]
+  active?: boolean,
+  payload?: { payload: IAssetAllocation }[]
 }
 
 export const CustomTooltip: React.FC<ICustomTooltipPros> = ({ active, payload }) => {
