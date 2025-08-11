@@ -1,5 +1,5 @@
 interface IRenderCustomizedLabelProps {
-  percentage: number;
+  percentage: unknown;
 }
 export const renderCustomizedLabel = ({
   percentage,
